@@ -3,6 +3,7 @@ package com.mark.testtmp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
@@ -12,6 +13,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
+        findViewById( R.id.markView ).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.i("test", "markView click()");
+            }
+        });
 
         findViewById( R.id.button ).setOnClickListener(new View.OnClickListener() {
             @Override

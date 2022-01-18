@@ -4,11 +4,10 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.drawable.ColorDrawable;
 import android.util.AttributeSet;
 import android.view.View;
 
-public class MarkView extends View {
+public class ShadowTestView extends com.google.android.material.card.MaterialCardView {
     private final Paint paint;
 
     float mRadius =  0.0f;
@@ -16,7 +15,7 @@ public class MarkView extends View {
     /*
      *　レイアウトから生成時用
      */
-    public MarkView(Context context, AttributeSet attrs) {
+    public ShadowTestView(Context context, AttributeSet attrs) {
         super(context, attrs);
 
         setLayerType(View.LAYER_TYPE_SOFTWARE, null);
@@ -29,7 +28,7 @@ public class MarkView extends View {
     /*
      *　コードから生成時用
      */
-    public MarkView(Context context) {
+    public ShadowTestView(Context context) {
         super(context);
         paint = new Paint();
         paint.setColor( Color.WHITE );
@@ -59,7 +58,7 @@ public class MarkView extends View {
         paint.setShadowLayer( (width / 5f), 0, 0, Color.RED );
 
         //paint.setColor(getResources().getColor(R.color.mark_5));
-        canvas.drawCircle(width / 2, getHeight() / 2, (width / 5), paint);
+        canvas.drawCircle(width, getHeight() / 2, (width / 5), paint);
     }
 
     public void setShadow(int add){
