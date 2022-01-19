@@ -56,10 +56,10 @@ public class MarkView extends View {
         int width = getWidth();
 
         //paint.setShadowLayer( (width / 4f), width / 4, getHeight() / 4, Color.RED );
-        paint.setShadowLayer( (width / 5f), 0, 0, Color.RED );
+        paint.setShadowLayer( (width / 3f), 0, 0, Color.RED );
 
         //paint.setColor(getResources().getColor(R.color.mark_5));
-        canvas.drawCircle(width / 2, getHeight() / 2, (width / 5), paint);
+        canvas.drawCircle(width / 2, getHeight() / 2, (width / 3f), paint);
     }
 
     public void setShadow(int add){

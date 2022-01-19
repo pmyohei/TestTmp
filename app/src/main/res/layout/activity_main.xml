@@ -11,6 +11,7 @@
         android:id="@+id/markView"
         android:layout_width="80dp"
         android:layout_height="80dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -126,7 +127,7 @@
             android:layout_height="wrap_content"
             app:cardCornerRadius="40dp"
             app:strokeWidth="1dp"
-            app:strokeColor="@color/red">
+            app:strokeColor="@color/black">
 
             <TextView
                 android:layout_width="80dp"

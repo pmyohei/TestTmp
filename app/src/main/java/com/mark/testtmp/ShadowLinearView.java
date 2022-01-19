@@ -23,8 +23,9 @@ public class ShadowLinearView extends LinearLayout {
         setLayerType(View.LAYER_TYPE_SOFTWARE, null);
 
         paint = new Paint();
-        paint.setColor( getResources().getColor( R.color.fill ) );
+        //paint.setColor( getResources().getColor( R.color.fill ) );
         //paint.setColor( Color.TRANSPARENT );
+        paint.setColor( Color.WHITE );
         paint.setAntiAlias(true);
     }
 
@@ -47,13 +48,13 @@ public class ShadowLinearView extends LinearLayout {
 
         int width = findViewById(R.id.mc_inner).getWidth();
 
-        Log.i("サイズチェック", "onDraw レイアウト確定＝" + width);
+        Log.i("サイズチェック", "ShadowLinearView レイアウト確定＝" + width);
 
         //paint.setShadowLayer( (width / 4f), width / 4, getHeight() / 4, Color.RED );
         paint.setShadowLayer( (width / 5f), 0, 0, Color.RED );
 
         //paint.setColor(getResources().getColor(R.color.mark_5));
-        canvas.drawCircle(getWidth() / 2, getHeight() / 2, (width / 2 ), paint);
+        canvas.drawCircle(getWidth() / 2f, getHeight() / 2f, (width / 2f), paint);
     }
 
     public void setShadow(int add){
