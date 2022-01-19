@@ -7,8 +7,9 @@ import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
 
-public class ShadowTestView extends com.google.android.material.card.MaterialCardView {
+public class ShadowTextTestView extends androidx.appcompat.widget.AppCompatTextView {
     private final Paint paint;
 
     float mRadius =  0.0f;
@@ -16,16 +17,17 @@ public class ShadowTestView extends com.google.android.material.card.MaterialCar
     /*
      *　レイアウトから生成時用
      */
-    public ShadowTestView(Context context, AttributeSet attrs) {
+    public ShadowTextTestView(Context context, AttributeSet attrs) {
         super(context, attrs);
 
         setLayerType(View.LAYER_TYPE_SOFTWARE, null);
 
         paint = new Paint();
         paint.setColor( getResources().getColor( R.color.fill ) );
-        //paint.setStrokeWidth( 110 );
         paint.setAntiAlias(true);
+
     }
+
 
 
     public void setColorID(int colorID){

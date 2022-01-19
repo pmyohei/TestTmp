@@ -7,8 +7,9 @@ import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
+import android.widget.LinearLayout;
 
-public class ShadowTestView extends com.google.android.material.card.MaterialCardView {
+public class ShadowLinearView extends LinearLayout {
     private final Paint paint;
 
     float mRadius =  0.0f;
@@ -16,14 +17,14 @@ public class ShadowTestView extends com.google.android.material.card.MaterialCar
     /*
      *　レイアウトから生成時用
      */
-    public ShadowTestView(Context context, AttributeSet attrs) {
+    public ShadowLinearView(Context context, AttributeSet attrs) {
         super(context, attrs);
 
         setLayerType(View.LAYER_TYPE_SOFTWARE, null);
 
         paint = new Paint();
         paint.setColor( getResources().getColor( R.color.fill ) );
-        //paint.setStrokeWidth( 110 );
+        //paint.setColor( Color.TRANSPARENT );
         paint.setAntiAlias(true);
     }
 
@@ -44,7 +45,7 @@ public class ShadowTestView extends com.google.android.material.card.MaterialCar
     @Override
     protected void onDraw(Canvas canvas) {
 
-        int width = getWidth();
+        int width = findViewById(R.id.mc_inner).getWidth();
 
         Log.i("サイズチェック", "onDraw レイアウト確定＝" + width);
 
@@ -52,7 +53,7 @@ public class ShadowTestView extends com.google.android.material.card.MaterialCar
         paint.setShadowLayer( (width / 5f), 0, 0, Color.RED );
 
         //paint.setColor(getResources().getColor(R.color.mark_5));
-        canvas.drawCircle(width / 2, getHeight() / 2, (width / 2 ), paint);
+        canvas.drawCircle(getWidth() / 2, getHeight() / 2, (width / 2 ), paint);
     }
 
     public void setShadow(int add){
