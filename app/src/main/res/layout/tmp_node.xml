@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/cl_nodeA"
+    android:id="@+id/cl_node"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="center">
@@ -35,17 +35,15 @@
     </androidx.cardview.widget.CardView>
 
     <!--  ツールアイコン  -->
-<!--    <ImageButton
+    <Button
         android:id="@+id/ib_createNode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="4dp"
-        android:visibility="gone"
         app:layout_constraintCircle="@id/card"
         app:layout_constraintCircleAngle="30"
-        app:layout_constraintCircleRadius="24dp"
+        app:layout_constraintCircleRadius="80dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />-->
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
