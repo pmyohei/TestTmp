@@ -52,8 +52,10 @@ public class MainActivity extends AppCompatActivity {
         findViewById( R.id.button10 ).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MarkView mark = findViewById( R.id.markView );
-                mark.setShadow( 10 );
+          /*      MarkView mark = findViewById( R.id.markView );
+                mark.setShadow( 10 );*/
+                Intent intent = new Intent( MainActivity.this, NeumorphismActivity.class );
+                startActivity( intent );
             }
         });
         findViewById( R.id.button100 ).setOnClickListener(new View.OnClickListener() {
@@ -78,7 +80,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        findViewById( R.id.shadowtest ).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MarkView mv = findViewById( R.id.markView );
+                mv.setShadow();
+            }
+        });
 
     }
 }

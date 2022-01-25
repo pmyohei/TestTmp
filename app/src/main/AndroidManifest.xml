@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TestTmp">
         <activity
+            android:name=".NeumorphismActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BottomSheetActivity"
+            android:exported="true" />
+        <activity
             android:name=".SizeTestActivity"
             android:exported="true" />
         <activity
