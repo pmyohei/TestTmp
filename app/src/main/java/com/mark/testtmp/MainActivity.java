@@ -85,6 +85,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 MarkView mv = findViewById( R.id.markView );
                 mv.setShadow();
+
+                Intent intent = new Intent( MainActivity.this, IconTestActivity.class );
+                startActivity( intent );
             }
         });
 

@@ -3,12 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/t.yohei/AndroidStudioProjects/TestTmp/app/src/main/res/layout/activity_bottom_sheet.xml" value="0.15625" />
         <entry key="..\:/Users/t.yohei/AndroidStudioProjects/TestTmp/app/src/main/res/layout/activity_main.xml" value="0.1824561403508772" />
-        <entry key="..\:/Users/t.yohei/AndroidStudioProjects/TestTmp/app/src/main/res/layout/activity_neumorphism.xml" value="0.1546875" />
-        <entry key="..\:/Users/t.yohei/AndroidStudioProjects/TestTmp/app/src/main/res/layout/bottom.xml" value="0.1519925857275255" />
-        <entry key="..\:/Users/t.yohei/AndroidStudioProjects/TestTmp/app/src/main/res/layout/bottom_sheet.xml" value="0.1546875" />
-        <entry key="..\:/Users/takahashi_yhi/AndroidStudioProjects/TestTmp/app/src/main/res/layout/activity_main.xml" value="0.30520833333333336" />
+        <entry key="..\:/Users/takahashi_yhi/AndroidStudioProjects/TestTmp/app/src/main/res/layout/activity_icon_test.xml" value="0.176" />
+        <entry key="..\:/Users/takahashi_yhi/AndroidStudioProjects/TestTmp/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/takahashi_yhi/AndroidStudioProjects/TestTmp/app/src/main/res/layout/frame_node.xml" value="0.302536231884058" />
+        <entry key="..\:/Users/takahashi_yhi/AndroidStudioProjects/TestTmp/app/src/main/res/layout/inflate_node.xml" value="0.2911458333333333" />
+        <entry key="..\:/Users/takahashi_yhi/AndroidStudioProjects/TestTmp/app/src/main/res/layout/inflate_node_tmp.xml" value="0.302536231884058" />
+        <entry key="..\:/Users/takahashi_yhi/AndroidStudioProjects/TestTmp/app/src/main/res/layout/inflate_node_tmp2.xml" value="0.25" />
+        <entry key="..\:/Users/takahashi_yhi/AndroidStudioProjects/TestTmp/app/src/main/res/layout/size_test_activity.xml" value="0.2296875" />
+        <entry key="..\:/Users/takahashi_yhi/AndroidStudioProjects/TestTmp/app/src/main/res/layout/tmp_node.xml" value="0.17760416666666667" />
       </map>
     </option>
   </component>

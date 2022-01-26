@@ -45,7 +45,6 @@
         app:layout_constraintStart_toEndOf="@+id/button10"
         app:layout_constraintTop_toBottomOf="@+id/markView" />
 
-
     <Button
         android:id="@+id/shadowtest"
         android:layout_width="80dp"
